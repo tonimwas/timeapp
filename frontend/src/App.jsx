@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import L from 'leaflet'
+import { LocateControl } from 'leaflet.locatecontrol'
+import 'leaflet.locatecontrol/dist/L.Control.Locate.min.css'
 
 const ORS_API_KEY = '5b3ce3597851110001cf6248f3c7d707f6f94f1c9315484e33df5f03'
 const ORS_DIRECTIONS_URL = 'https://api.openrouteservice.org/v2/directions/driving-car/geojson'
@@ -71,6 +73,37 @@ function App() {
       maxZoom: 19,
       attribution: '&copy; OpenStreetMap contributors',
     }).addTo(mapInstanceRef.current)
+    new LocateControl().addTo(mapInstanceRef.current)
+    mapInstanceRef.current.on('locationfound', (e) => {
+      const lat = e.latlng.lat
+      const lng = e.latlng.lng
+      fetch('/api/set-location/', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `lat=${lat}&lng=${lng}`
+      }).then(response => response.json()).then(data => {
+        console.log('Location set:', data)
+        setNeighbourhoodCenters(prev => ({ ...prev, [data.neighbourhood]: { lat, lng } }))
+        setPlaces(prev => [...prev, {
+          id: 'user-location',
+          name: 'My Location',
+          category: 'Starting Point',
+          neighbourhood: data.neighbourhood,
+          coords: { lat, lng },
+          entryFee: 0,
+          avgFood: 0,
+          durationMin: 0,
+          rating: 5.0,
+          priceTier: 'Free',
+          tags: ['user', 'location'],
+          vibes: ['personal'],
+          popularity: 1.0
+        }])
+        document.getElementById('start-location').value = data.neighbourhood
+      }).catch(error => {
+        console.error('Error setting location:', error)
+      })
+    })
   }
 
   async function fetchRouteSegment(from, to) {

@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.views.decorators.cache import never_cache
 
 from .models import Place
-from .utils import calculate_transport
+from .utils import calculate_transport, get_neighbourhood
 
 
 @never_cache
@@ -86,3 +86,35 @@ def geo_data(request):
             "transportTable": transport_table,
         }
     )
+
+
+def set_location(request):
+    """
+    Set the user's starting location by creating a Place at their coordinates,
+    with neighbourhood determined via reverse geocoding.
+    """
+    if request.method == 'POST':
+        lat = request.POST.get('lat')
+        lng = request.POST.get('lng')
+        if not lat or not lng:
+            return JsonResponse({'status': 'error', 'message': 'Missing lat or lng'})
+        neighbourhood = get_neighbourhood(float(lat), float(lng))
+        slug = f"user-location-{lat}-{lng}".replace('.', '-')
+        Place.objects.create(
+            slug=slug,
+            name="My Location",
+            category="Starting Point",
+            neighbourhood=neighbourhood,
+            lat=float(lat),
+            lng=float(lng),
+            entry_fee=0,
+            avg_food=0,
+            duration_min=0,
+            rating=5.0,
+            price_tier="Free",
+            tags=["user", "location"],
+            vibes=["personal"],
+            popularity=1.0
+        )
+        return JsonResponse({'status': 'success', 'neighbourhood': neighbourhood})
+    return JsonResponse({'status': 'error', 'message': 'Invalid method'})

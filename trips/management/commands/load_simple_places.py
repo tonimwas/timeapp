@@ -8,7 +8,7 @@ from trips.models import Place
 
 
 class Command(BaseCommand):
-    help = "Load Places data from a JSON file. Clears existing Places first."
+    help = "Load Places data from a JSON file. Appends to existing Places."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -33,9 +33,9 @@ class Command(BaseCommand):
         if not isinstance(data, list):
             raise CommandError("JSON must be a list of Place objects.")
 
-        # Clear existing data
-        self.stdout.write("Clearing existing Places...")
-        Place.objects.all().delete()
+        # No clearing, append to existing data
+        # self.stdout.write("Clearing existing Places...")
+        # Place.objects.all().delete()
 
         # Load new data
         self.stdout.write(f"Loading {len(data)} Places...")

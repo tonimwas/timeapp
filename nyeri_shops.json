@@ -1,0 +1,842 @@
+[
+    {
+        "slug": "quickmart",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2836855,
+        "lng": 36.8253214,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "optica",
+        "name": "Optica",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2979509,
+        "lng": 36.7627444,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "chieni-supermarket",
+        "name": "Chieni Supermarket",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.01483,
+        "lng": 37.0752267,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "hopetech-computer-services",
+        "name": "Hopetech Computer Services",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4974289,
+        "lng": 36.9053368,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "nanyuki-general-merchants",
+        "name": "Nanyuki General Merchants",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.0134831,
+        "lng": 37.077369,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-2",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2640185,
+        "lng": 36.802103,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "wamboo-shopping-center",
+        "name": "Wamboo Shopping Center",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.168783,
+        "lng": 37.0657504,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "omega-supermarkets",
+        "name": "Omega Supermarkets",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4846967,
+        "lng": 37.1339699,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "mathai-supermarket-karatina",
+        "name": "Mathai Supermarket (Karatina)",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4832383,
+        "lng": 37.124532,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "wambuguapple-farm",
+        "name": "Wambuguapple Farm",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4447345,
+        "lng": 36.9846716,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "m-pesa-samchi-telecomms",
+        "name": "M-Pesa Samchi Telecomms",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4369553,
+        "lng": 36.9758261,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "ciaraini-centre",
+        "name": "Ciaraini Centre",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4371666,
+        "lng": 36.9549134,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "nyeri-mall",
+        "name": "Nyeri Mall",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4249194,
+        "lng": 36.955685,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "naivas-supermarket-nyeri",
+        "name": "Naivas Supermarket Nyeri",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4248746,
+        "lng": 36.9553429,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "chieni-supermarket-2",
+        "name": "Chieni Supermarket",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4218719,
+        "lng": 36.9533905,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "prestige-plaza",
+        "name": "Prestige Plaza",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4223856,
+        "lng": 36.9525446,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "nairutia-shopping-center",
+        "name": "Nairutia Shopping center",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.1419543,
+        "lng": 36.7109034,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "ep-communications-mweiga",
+        "name": "EP Communications-Mweiga",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.3283856,
+        "lng": 36.9053387,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "one-stop-nanyuki",
+        "name": "One Stop Nanyuki",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.0618353,
+        "lng": 37.044278,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-3",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.3137528,
+        "lng": 36.8949022,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-4",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2899363,
+        "lng": 36.773464,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-5",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.0107654,
+        "lng": 37.0755447,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "chieni",
+        "name": "Chieni",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.1699301,
+        "lng": 37.021653,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "nanmatt-farm-shop",
+        "name": "Nanmatt Farm Shop",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.062421,
+        "lng": 37.0445429,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-6",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2849108,
+        "lng": 36.8313768,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-7",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2636307,
+        "lng": 36.7634333,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-8",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.3136754,
+        "lng": 36.9150496,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-9",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.1835102,
+        "lng": 36.9015966,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-10",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2981566,
+        "lng": 36.7831953,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-11",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.3122508,
+        "lng": 36.8169343,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-12",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.2930205,
+        "lng": 36.7928528,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "jawa-hardware",
+        "name": "jawa hardware",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.5024762,
+        "lng": 37.0250809,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "maina-road-shop",
+        "name": "maina-road shop",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.5095959,
+        "lng": 37.0393846,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "shop",
+        "name": "SHOP",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.5033037,
+        "lng": 37.013386,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "kanjuri-shopping-centre",
+        "name": "Kanjuri Shopping Centre",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4017143,
+        "lng": 37.1512442,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "jasho-bakers",
+        "name": "Jasho Bakers",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.398397,
+        "lng": 37.1537398,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "riverside-kiosk",
+        "name": "Riverside Kiosk",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.4005423,
+        "lng": 37.1561257,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-13",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.288442,
+        "lng": 36.8267881,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "optica-2",
+        "name": "Optica",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.0106039,
+        "lng": 37.0754509,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "quickmart-14",
+        "name": "QuickMart",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -1.091939,
+        "lng": 35.8699563,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "workshop",
+        "name": "Workshop",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.3988572,
+        "lng": 36.9612224,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    },
+    {
+        "slug": "rc-15",
+        "name": "rc 15",
+        "category": "Shop",
+        "neighbourhood": "Nyeri",
+        "lat": -0.3981157,
+        "lng": 36.9608705,
+        "entry_fee": 0,
+        "avg_food": 0,
+        "duration_min": 30,
+        "rating": 3.5,
+        "price_tier": "Budget",
+        "tags": [
+            "shop"
+        ],
+        "vibes": [
+            "local"
+        ],
+        "popularity": 0.4
+    }
+]

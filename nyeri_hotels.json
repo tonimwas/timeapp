@@ -1,0 +1,884 @@
+[
+    {
+        "slug": "fishing-lodge",
+        "name": "Fishing Lodge",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "aberdare-country-club",
+        "name": "Aberdare Country Club",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "hotel-starbucks",
+        "name": "Hotel Starbucks",
+        "category": "Hotel",
+        "neighbourhood": "Karatina",
+        "lat": -0.49,
+        "lng": 37.13,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "express-inn",
+        "name": "Express Inn",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "serena-mountain-lodge",
+        "name": "Serena Mountain Lodge",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "mount-kenya-safari-club",
+        "name": "Mount Kenya Safari Club",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "calabash-inn",
+        "name": "Calabash Inn",
+        "category": "Hotel",
+        "neighbourhood": "Karatina",
+        "lat": -0.49,
+        "lng": 37.13,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "batain\u2019s-view-campsite",
+        "name": "Batain\u2019s View Campsite",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "oldoiyo-lengai-hotel",
+        "name": "Oldoiyo Lengai Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Karatina",
+        "lat": -0.49,
+        "lng": 37.13,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "kirimara-springs-hotel",
+        "name": "Kirimara Springs Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "the-brade-gate",
+        "name": "The Brade Gate",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "the-old-house-nanyuki",
+        "name": "The Old House Nanyuki",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "emess-hotel",
+        "name": "Emess Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "maxoil-hotel",
+        "name": "Maxoil Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "thailand-resort",
+        "name": "Thailand Resort",
+        "category": "Hotel",
+        "neighbourhood": "Karatina",
+        "lat": -0.49,
+        "lng": 37.13,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "omega-gardens-hotel",
+        "name": "Omega Gardens Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Karatina",
+        "lat": -0.49,
+        "lng": 37.13,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "roswam-hotel",
+        "name": "Roswam Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Karatina",
+        "lat": -0.49,
+        "lng": 37.13,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "senior-chief-wambugu-hotel",
+        "name": "Senior Chief Wambugu Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "classic-court-hotel",
+        "name": "Classic Court Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "batian-grand-hotel",
+        "name": "Batian Grand Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "eland-safari-hotel",
+        "name": "Eland Safari Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "sun-guest-house",
+        "name": "Sun Guest House",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "central-hotel-nyeri",
+        "name": "Central Hotel Nyeri",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "itara-garden-hotel",
+        "name": "Itara Garden Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "riverside-hostel",
+        "name": "Riverside Hostel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "davis-court-nyeri",
+        "name": "Davis Court Nyeri",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "mpeta-house",
+        "name": "Mpeta House",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "rhino-watch-safari-lodge",
+        "name": "Rhino Watch Safari Lodge",
+        "category": "Hotel",
+        "neighbourhood": "Muiga",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "mt.-kenya-safari-halt-hotel",
+        "name": "Mt. Kenya Safari Halt Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "the-nelion",
+        "name": "The Nelion",
+        "category": "Hotel",
+        "neighbourhood": "Naro Moru",
+        "lat": -0.17,
+        "lng": 37.02,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "olive-shade-hotel",
+        "name": "Olive Shade Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Naro Moru",
+        "lat": -0.17,
+        "lng": 37.02,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "aberdare-prestige-and-royal-cottages",
+        "name": "Aberdare Prestige & Royal Cottages",
+        "category": "Hotel",
+        "neighbourhood": "Gitinga Village",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "soames-hotel-and-jacks-bar",
+        "name": "Soames Hotel & Jack's Bar",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "napolitana-hotel",
+        "name": "Napolitana Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "batian-guest-hotel",
+        "name": "Batian Guest Hotel",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "sarafina-art-gallery",
+        "name": "Sarafina Art Gallery",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "karichota-airbnb",
+        "name": "Karichota airbnb",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "ole-samara",
+        "name": "Ole Samara",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "esiankiki-resort-and-spa",
+        "name": "Esiankiki Resort & Spa",
+        "category": "Hotel",
+        "neighbourhood": "Nanyuki",
+        "lat": -0.02,
+        "lng": 37.07,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "misty-mountain",
+        "name": "Misty Mountain",
+        "category": "Hotel",
+        "neighbourhood": "Naru Moru",
+        "lat": -0.17,
+        "lng": 37.02,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "treetops-lodge",
+        "name": "Treetops Lodge",
+        "category": "Hotel",
+        "neighbourhood": "Nyeri",
+        "lat": -0.42,
+        "lng": 36.95,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    },
+    {
+        "slug": "thomsons-falls-lodge",
+        "name": "Thomson's Falls Lodge",
+        "category": "Hotel",
+        "neighbourhood": "Thomson's Falls",
+        "lat": -0.53,
+        "lng": 37.02,
+        "entry_fee": 0,
+        "avg_food": 500,
+        "duration_min": 120,
+        "rating": 4.0,
+        "price_tier": "Mid",
+        "tags": [
+            "hotel",
+            "accommodation"
+        ],
+        "vibes": [
+            "comfortable"
+        ],
+        "popularity": 0.5
+    }
+]

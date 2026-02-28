@@ -1,4 +1,5 @@
 import math
+import requests
 from typing import Tuple
 
 from django.conf import settings
@@ -38,3 +39,19 @@ def calculate_transport(lat1: float, lng1: float, lat2: float, lng2: float) -> T
     minutes = int(distance_km * settings.TRANSPORT_TIME_MULTIPLIER)
     mode = "Matatu"  # Default mode
     return mode, fare, minutes
+
+
+def get_neighbourhood(lat: float, lng: float) -> str:
+    """
+    Reverse geocode lat/lng to determine neighbourhood using Nominatim.
+    Returns the neighbourhood name or 'Unknown'.
+    """
+    url = f"https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={lng}"
+    response = requests.get(url, headers={'User-Agent': 'TimeApp'})
+    if response.status_code == 200:
+        data = response.json()
+        display_name = data.get('display_name', '')
+        parts = display_name.split(', ')
+        neighbourhood = parts[0] if parts else 'Unknown'
+        return neighbourhood
+    return 'Unknown'
