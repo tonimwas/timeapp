@@ -2,7 +2,8 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.cache import never_cache
 
-from .models import Neighbourhood, Place, TransportEdge
+from .models import Place
+from .utils import calculate_transport
 
 
 @never_cache
@@ -16,21 +17,29 @@ def geo_data(request):
     Return neighbourhood centers, places, and transport data in the same
     shape that the frontend expects, replacing the hard-coded JS objects.
     """
-    neighbourhoods = Neighbourhood.objects.all()
-    neighbourhood_centers = {
-        n.name: {"lat": n.lat, "lng": n.lng} for n in neighbourhoods
-    }
-
-    places_qs = Place.objects.select_related("neighbourhood").all()
+    places_qs = Place.objects.all()
     places = []
 
+    # Collect neighbourhood data
+    neighbourhood_data = {}  # name -> {"places": [], "lat_sum": 0, "lng_sum": 0, "count": 0}
+
     for p in places_qs:
+        neighbourhood = p.neighbourhood or "General"  # Default if blank
+
+        if neighbourhood not in neighbourhood_data:
+            neighbourhood_data[neighbourhood] = {"places": [], "lat_sum": 0.0, "lng_sum": 0.0, "count": 0}
+
+        neighbourhood_data[neighbourhood]["places"].append(p)
+        neighbourhood_data[neighbourhood]["lat_sum"] += p.lat
+        neighbourhood_data[neighbourhood]["lng_sum"] += p.lng
+        neighbourhood_data[neighbourhood]["count"] += 1
+
         places.append(
             {
                 "id": p.slug,
                 "name": p.name,
                 "category": p.category,
-                "neighbourhood": p.neighbourhood.name,
+                "neighbourhood": neighbourhood,
                 "coords": {"lat": p.lat, "lng": p.lng},
                 "entryFee": p.entry_fee,
                 "avgFood": p.avg_food,
@@ -43,16 +52,32 @@ def geo_data(request):
             }
         )
 
-    # Build a transport lookup table identical to the former JS object.
-    edges = TransportEdge.objects.select_related("origin", "destination").all()
+    # Compute neighbourhood centers
+    neighbourhood_centers = {}
+    for name, data in neighbourhood_data.items():
+        if data["count"] > 0:
+            avg_lat = data["lat_sum"] / data["count"]
+            avg_lng = data["lng_sum"] / data["count"]
+            neighbourhood_centers[name] = {"lat": avg_lat, "lng": avg_lng}
+
+    # Build transport table between neighbourhoods
+    neighbourhood_names = list(neighbourhood_centers.keys())
     transport_table = {}
-    for edge in edges:
-        key = f"{edge.origin.name}|{edge.destination.name}"
-        transport_table[key] = {
-            "mode": edge.mode,
-            "fare": edge.fare,
-            "minutes": edge.minutes,
-        }
+    for i, origin in enumerate(neighbourhood_names):
+        origin_coords = neighbourhood_centers[origin]
+        for j, dest in enumerate(neighbourhood_names):
+            if i != j:  # No self-loops
+                dest_coords = neighbourhood_centers[dest]
+                mode, fare, minutes = calculate_transport(
+                    origin_coords["lat"], origin_coords["lng"],
+                    dest_coords["lat"], dest_coords["lng"]
+                )
+                key = f"{origin}|{dest}"
+                transport_table[key] = {
+                    "mode": mode,
+                    "fare": fare,
+                    "minutes": minutes,
+                }
 
     return JsonResponse(
         {

@@ -130,6 +130,11 @@ USE_I18N = True
 USE_TZ = True
 
 
+# Custom app settings
+TRANSPORT_FARE_RATE = 5  # KSH per km
+TRANSPORT_TIME_MULTIPLIER = 10  # minutes per km
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 

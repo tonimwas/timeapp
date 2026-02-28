@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "nyeri-museum",
+    "name": "Nyeri Museum",
+    "category": "Attraction",
+    "neighbourhood": "Downtown Nyeri",
+    "lat": -0.4167,
+    "lng": 36.9500,
+    "entry_fee": 200,
+    "avg_food": 300,
+    "duration_min": 90,
+    "rating": 4.5,
+    "price_tier": "Budget",
+    "tags": ["history", "culture"],
+    "vibes": ["authentic", "chill"],
+    "popularity": 0.8
+  },
+  {
+    "slug": "nyeri-park",
+    "name": "Nyeri Central Park",
+    "category": "Park",
+    "neighbourhood": "Downtown Nyeri",
+    "lat": -0.4170,
+    "lng": 36.9510,
+    "entry_fee": 0,
+    "avg_food": 150,
+    "duration_min": 60,
+    "rating": 4.0,
+    "price_tier": "Free",
+    "tags": ["nature", "walk"],
+    "vibes": ["chill", "scenic"],
+    "popularity": 0.7
+  },
+  {
+    "slug": "outskirts-cafe",
+    "name": "Outskirts Cafe",
+    "category": "Café",
+    "neighbourhood": "Outskirts Nyeri",
+    "lat": -0.42,
+    "lng": 36.96,
+    "entry_fee": 0,
+    "avg_food": 400,
+    "duration_min": 45,
+    "rating": 4.2,
+    "price_tier": "Mid",
+    "tags": ["coffee", "wifi"],
+    "vibes": ["chill"],
+    "popularity": 0.6
+  }
+]

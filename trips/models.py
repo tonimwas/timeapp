@@ -1,27 +1,13 @@
 from django.db import models
 
 
-class Neighbourhood(models.Model):
-    name = models.CharField(max_length=100, unique=True)
-    lat = models.FloatField()
-    lng = models.FloatField()
-
-    class Meta:
-        ordering = ["name"]
-
-    def __str__(self) -> str:
-        return self.name
-
-
 class Place(models.Model):
     # Match the string IDs used in the frontend (e.g. "karura")
     slug = models.SlugField(primary_key=True)
     name = models.CharField(max_length=200)
     category = models.CharField(max_length=50)
 
-    neighbourhood = models.ForeignKey(
-        Neighbourhood, related_name="places", on_delete=models.CASCADE
-    )
+    neighbourhood = models.CharField(max_length=100, blank=True)  # Optional tag, no FK
 
     lat = models.FloatField()
     lng = models.FloatField()
@@ -44,29 +30,3 @@ class Place(models.Model):
 
     def __str__(self) -> str:
         return self.name
-
-
-class TransportEdge(models.Model):
-    """
-    Explicit transport edges between neighbourhoods.
-
-    This replaces the hard-coded `transportTable` object in the frontend.
-    """
-
-    origin = models.ForeignKey(
-        Neighbourhood, related_name="outgoing_edges", on_delete=models.CASCADE
-    )
-    destination = models.ForeignKey(
-        Neighbourhood, related_name="incoming_edges", on_delete=models.CASCADE
-    )
-
-    mode = models.CharField(max_length=50, default="Matatu")
-    fare = models.PositiveIntegerField()
-    minutes = models.PositiveIntegerField()
-
-    class Meta:
-        unique_together = ("origin", "destination")
-        ordering = ["origin__name", "destination__name"]
-
-    def __str__(self) -> str:
-        return f"{self.origin} → {self.destination} ({self.mode})"

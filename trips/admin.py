@@ -1,12 +1,6 @@
 from django.contrib import admin
 
-from .models import Neighbourhood, Place
-
-
-@admin.register(Neighbourhood)
-class NeighbourhoodAdmin(admin.ModelAdmin):
-    list_display = ("name", "lat", "lng")
-    search_fields = ("name",)
+from .models import Place
 
 
 @admin.register(Place)
