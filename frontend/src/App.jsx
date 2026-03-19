@@ -128,6 +128,7 @@ function App() {
 
   async function buildRoadRoute(latLngs) {
     const fullRoute = []
+    let allSegmentsSucceeded = true
     for (let i = 0; i < latLngs.length - 1; i++) {
       const from = { lat: latLngs[i][0], lng: latLngs[i][1] }
       const to = { lat: latLngs[i + 1][0], lng: latLngs[i + 1][1] }
@@ -136,10 +137,11 @@ function App() {
         if (fullRoute.length) segment.shift()
         fullRoute.push(...segment)
       } else {
-        fullRoute.push(latLngs[i], latLngs[i + 1])
+        allSegmentsSucceeded = false
+        break
       }
     }
-    return fullRoute
+    return allSegmentsSucceeded ? fullRoute : null
   }
 
   async function updateMap(stops, startNeighbourhood) {
@@ -177,26 +179,39 @@ function App() {
     })
 
     const roadRouteLatLngs = await buildRoadRoute(latLngs)
-    if (!roadRouteLatLngs.length) {
-      polylineRef.current = L.polyline(latLngs, { color: '#22c55e', weight: 4, opacity: 0.9 }).addTo(mapInstanceRef.current)
+    if (roadRouteLatLngs && roadRouteLatLngs.length) {
+      polylineRef.current = L.polyline(roadRouteLatLngs, { color: '#22c55e', weight: 4, opacity: 0.9 }).addTo(mapInstanceRef.current)
       mapInstanceRef.current.fitBounds(polylineRef.current.getBounds(), { padding: [24, 24] })
-      return
+    } else {
+      mapInstanceRef.current.fitBounds(L.latLngBounds(latLngs), { padding: [24, 24] })
     }
-
-    polylineRef.current = L.polyline(roadRouteLatLngs, { color: '#22c55e', weight: 4, opacity: 0.9 }).addTo(mapInstanceRef.current)
-    mapInstanceRef.current.fitBounds(polylineRef.current.getBounds(), { padding: [24, 24] })
   }
 
   function getTransport(origin, destination) {
     if (origin === destination) return { mode: 'Walk', fare: 0, minutes: 0 }
     const directKey = `${origin}|${destination}`
-    if (transportTable[directKey]) return transportTable[directKey]
+    if (transportTable[directKey]) {
+      const fromTable = transportTable[directKey]
+      const tableMinutes = Number(fromTable?.minutes)
+      if (Number.isFinite(tableMinutes) && tableMinutes > 0) {
+        return fromTable
+      }
+
+      const originCenter = neighbourhoodCenters[origin]
+      const destCenter = neighbourhoodCenters[destination]
+      if (!originCenter || !destCenter) {
+        return { ...fromTable, minutes: 45 }
+      }
+      const km = haversineKm(originCenter, destCenter)
+      const minutes = Math.round(Math.max(1, (km / 45) * 60))
+      return { ...fromTable, minutes }
+    }
     const originCenter = neighbourhoodCenters[origin]
     const destCenter = neighbourhoodCenters[destination]
     if (!originCenter || !destCenter) return { mode: 'Matatu', fare: 80, minutes: 45 }
     const km = haversineKm(originCenter, destCenter)
     const fare = Math.round(Math.max(30, km * 8))
-    const minutes = Math.round(Math.max(10, km * 3))
+    const minutes = Math.round(Math.max(1, (km / 45) * 60))
     return { mode: 'Matatu', fare, minutes }
   }
 
@@ -426,6 +441,7 @@ function App() {
                   const cumulativeCost = result.stops.reduce((sum, s) => sum + s.costBreakdown.total, 0)
                   const cumulativeMinutes = result.stops.reduce((sum, s) => sum + s.timeBreakdown.total, 0)
                   const transportTotal = result.stops.reduce((sum, s) => sum + s.costBreakdown.transport, 0)
+                  const transportMinutesTotal = result.stops.reduce((sum, s) => sum + s.timeBreakdown.travel, 0)
                   const placeTotal = result.stops.reduce((sum, s) => sum + s.costBreakdown.entry + s.costBreakdown.food, 0)
                   const budgetUsedPct = (cumulativeCost / totalBudget) * 100
                   const timeUsedPct = (cumulativeMinutes / totalMinutes) * 100
@@ -438,6 +454,7 @@ function App() {
                       <div className="summary-row"><span className="summary-label">Budget remaining</span><span className="summary-value summary-strong">KSH {totalBudget - cumulativeCost}</span></div>
                       <hr style={{ borderColor: 'rgba(31,41,55,0.9)', margin: '0.35rem 0' }} />
                       <div className="summary-row"><span className="summary-label">Time used</span><span className="summary-value">{cumulativeMinutes} min ({timeUsedPct.toFixed(0)}% of budgeted time)</span></div>
+                      <div className="summary-row"><span className="summary-label">Transport time</span><span className="summary-value">{transportMinutesTotal} min</span></div>
                       <div className="summary-row"><span className="summary-label">Time remaining</span><span className="summary-value">{Math.max(0, Math.round(result.remainingMinutes))} min</span></div>
                       <div className="summary-row"><span className="summary-label">Budget used</span><span className="summary-value">{budgetUsedPct.toFixed(0)}% of KSH {totalBudget}</span></div>
                     </>

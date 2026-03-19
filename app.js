@@ -39,7 +39,22 @@ async function loadGeoData() {
 function getTransport(origin, destination) {
   if (origin === destination) return { mode: 'Walk', fare: 0, minutes: 0 };
   const directKey = `${origin}|${destination}`;
-  if (transportTable[directKey]) return transportTable[directKey];
+  if (transportTable[directKey]) {
+    const fromTable = transportTable[directKey];
+    const tableMinutes = Number(fromTable?.minutes);
+    if (Number.isFinite(tableMinutes) && tableMinutes > 0) {
+      return fromTable;
+    }
+
+    const originCenter = neighbourhoodCenters[origin];
+    const destCenter = neighbourhoodCenters[destination];
+    if (!originCenter || !destCenter) {
+      return { ...fromTable, minutes: 45 };
+    }
+    const km = haversineKm(originCenter, destCenter);
+    const minutes = Math.round(Math.max(1, (km / 45) * 60));
+    return { ...fromTable, minutes };
+  }
   // Fallback: approximate matatu between centres by straight-line distance
   const originCenter = neighbourhoodCenters[origin];
   const destCenter = neighbourhoodCenters[destination];
@@ -48,7 +63,7 @@ function getTransport(origin, destination) {
   }
   const km = haversineKm(originCenter, destCenter);
   const fare = Math.round(Math.max(30, km * 8)); // rough
-  const minutes = Math.round(Math.max(10, km * 3));
+  const minutes = Math.round(Math.max(1, (km / 45) * 60));
   return { mode: 'Matatu', fare, minutes };
 }
 
@@ -277,6 +292,7 @@ async function fetchRouteSegment(from, to) {
 
 async function buildRoadRoute(latLngs) {
   const fullRoute = [];
+  let allSegmentsSucceeded = true;
 
   for (let i = 0; i < latLngs.length - 1; i++) {
     const from = { lat: latLngs[i][0], lng: latLngs[i][1] };
@@ -291,12 +307,13 @@ async function buildRoadRoute(latLngs) {
       }
       fullRoute.push(...segment);
     } else {
-      // Fallback: straight line if routing fails for this pair
-      fullRoute.push(latLngs[i], latLngs[i + 1]);
+      // If any segment fails, do not use straight line fallback
+      allSegmentsSucceeded = false;
+      break; // Can break early since we won't use the route anyway
     }
   }
 
-  return fullRoute;
+  return allSegmentsSucceeded ? fullRoute : null;
 }
 
 function initMap() {
@@ -360,25 +377,18 @@ async function updateMap(stops, startNeighbourhood) {
   // Build a route that follows actual roads between the points
   const roadRouteLatLngs = await buildRoadRoute(latLngs);
 
-  if (!roadRouteLatLngs.length) {
-    // Fallback to straight lines if routing completely fails
-    mapPolyline = L.polyline(latLngs, {
+  if (roadRouteLatLngs && roadRouteLatLngs.length) {
+    mapPolyline = L.polyline(roadRouteLatLngs, {
       color: '#22c55e',
       weight: 4,
       opacity: 0.9,
     }).addTo(map);
 
     map.fitBounds(mapPolyline.getBounds(), { padding: [24, 24] });
-    return;
+  } else {
+    // No route to display if routing fails
+    map.fitBounds(L.latLngBounds(latLngs), { padding: [24, 24] });
   }
-
-  mapPolyline = L.polyline(roadRouteLatLngs, {
-    color: '#22c55e',
-    weight: 4,
-    opacity: 0.9,
-  }).addTo(map);
-
-  map.fitBounds(mapPolyline.getBounds(), { padding: [24, 24] });
 }
 
 // ------------------------------
@@ -412,6 +422,7 @@ function renderItinerary(result, totalBudget, totalMinutes) {
   let cumulativeCost = 0;
   let cumulativeMinutes = 0;
   let transportTotal = 0;
+  let transportMinutesTotal = 0;
   let placeTotal = 0;
 
   result.stops.forEach((stop, idx) => {
@@ -419,6 +430,7 @@ function renderItinerary(result, totalBudget, totalMinutes) {
     cumulativeCost += costBreakdown.total;
     cumulativeMinutes += timeBreakdown.total;
     transportTotal += costBreakdown.transport;
+    transportMinutesTotal += timeBreakdown.travel;
     placeTotal += costBreakdown.entry + costBreakdown.food;
 
     const el = document.createElement('article');
@@ -488,6 +500,10 @@ function renderItinerary(result, totalBudget, totalMinutes) {
       <span class="summary-value">${cumulativeMinutes} min (${timeUsedPct.toFixed(
         0
       )}% of budgeted time)</span>
+    </div>
+    <div class="summary-row">
+      <span class="summary-label">Transport time</span>
+      <span class="summary-value">${transportMinutesTotal} min</span>
     </div>
     <div class="summary-row">
       <span class="summary-label">Time remaining</span>
